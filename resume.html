@@ -3,184 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Resume - Shivansh Bhageria</title>
     <link rel="stylesheet" href="styles/main.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="scripts/main.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        body {
-            background: linear-gradient(120deg, #f8fafc 0%, #e3e6ee 100%);
-        }
-        .resume-container {
-            max-width: 900px;
-            margin: 2em auto;
-            background: #fff;
-            padding: 2.5em 2em;
-            border-radius: 16px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.09);
-            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-        }
-        .resume-header {
-            text-align: center;
-            margin-bottom: 0.5em;
-        }
-        .resume-header h1 {
-            font-size: 2.7em;
-            margin-bottom: 0.2em;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-        .resume-header .contact {
-            font-size: 1.08em;
-            margin-bottom: 0.5em;
-            color: #444;
-        }
-        .resume-header .contact i {
-            margin: 0 0.2em;
-            color: #d32f2f;
-        }
-        .divider {
-            border-top: 2px solid #e0e0e0;
-            margin: 1.2em 0 0.7em 0;
-        }
-        .section-title {
-            font-size: 1.3em;
-            font-weight: bold;
-            color: #d32f2f;
-            margin-bottom: 0.2em;
-            letter-spacing: 0.5px;
-        }
-        .subsection-title {
-            font-weight: bold;
-            color: #222;
-        }
-        .resume-section {
-            margin-bottom: 1.2em;
-        }
-        .resume-section ul {
-            margin: 0.5em 0 0.5em 1.2em;
-        }
-        .resume-section li {
-            margin-bottom: 0.3em;
-        }
-        .right {
-            float: right;
-            color: #d32f2f;
-            font-style: italic;
-            font-size: 1em;
-        }
-        .resume-section .highlight {
-            color: #d32f2f;
-            font-weight: bold;
-        }
-        .achievements-list li {
-            margin-bottom: 0.2em;
-        }
-        .courses-list {
-            columns: 2;
-            -webkit-columns: 2;
-            -moz-columns: 2;
-        }
-        .resume-section .fa {
-            color: #d32f2f;
-            margin-right: 0.3em;
-        }
-        @media (max-width: 600px) {
-            .resume-container { padding: 1em 0.5em; }
-            .courses-list { columns: 1; }
-        }
-    </style>
+
+<style>
+body { background: linear-gradient(120deg, #f8fafc 0%, #e3e6ee 100%); }
+.resume-container {
+    max-width: 900px; margin: 2em auto; background: #fff;
+    padding: 2.5em 2em; border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+    font-family: 'Segoe UI','Roboto',Arial;
+}
+.resume-header { text-align:center; margin-bottom:0.5em; }
+.resume-header h1 { font-size:2.7em; margin-bottom:0.2em;
+    font-weight:700; letter-spacing:1px; }
+.contact { font-size:1.05em; color:#444; }
+.contact a {
+    color:#444; margin: 0 4px;
+    text-decoration:none;
+    transition:0.3s ease;
+}
+.contact a:hover {
+    color:#d32f2f;
+    transform: translateY(-2px);
+}
+.section-title {
+    font-size:1.3em; font-weight:bold; color:#d32f2f;
+    margin-bottom:0.4em;
+}
+.right {
+    float:right; color:#d32f2f;
+    font-style:italic; font-size:0.95em;
+}
+.resume-section ul { margin-left:1.2em; margin-top:0.5em; }
+.divider { border-top:2px solid #e0e0e0; margin:1.2em 0; }
+</style>
+
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="biodata.html">Bio-data</a></li>
-        </ul>
-    </nav>
-        <main>
-        <div class="resume-container">
-            <div class="resume-header">
-                <h1>Kapiljit Singh</h1>
-                <div class="contact">
-                    Kalasipalya, Bangalore, Karnataka<br>
-                    <span><i class="fa fa-phone"></i> (+91) 7458948639</span> |
-                    <span><i class="fa fa-envelope"></i> luffykapill@gmail.com</span> |
-                    <span><i class="fa fa-linkedin"></i> kapiljit singh</span>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <div class="resume-section">
-                <span class="section-title">Skills</span>
-                <ul>
-                    <li><span class="subsection-title"><i class="fa fa-code"></i> Programming Languages</span> <span style="color:#444;">C++, Java, Python, C, SQL</span></li>
-                    <li><span class="subsection-title"><i class="fa fa-trophy"></i> Competitive Programming</span> <span style="color:#444;">LeetCode: kapiljit_singh &nbsp; Codeforces: luffy2003 &nbsp; CodeChef: same_club_70</span></li>
-                </ul>
-            </div>
-            <div class="divider"></div>
-            <div class="resume-section">
-                <span class="section-title">Education</span>
-                <span class="right">Karnataka, India</span>
-                <div style="font-weight:bold;"><i class="fa fa-university"></i> Bangalore institute of technology, Bangalore</div>
-                <div style="font-size:1em;">BACHELORS OF ENGINEERING IN COMPUTER SCIENCE AND ENGINEERING</div>
-                <div style="font-size:0.95em;">Cumulative Performance Index, CPI: 8.19/10.00</div>
-                <div style="font-size:0.95em; color:#666;">Sept. 2023 - still studying(till 2027)</div>
-            </div>
-            <div class="divider"></div>
-            <div class="resume-section">
-                <span class="section-title">Projects</span>
-                <div style="font-weight:bold;"><i class="fa fa-file-alt"></i> Invoice Generator (Advisor: Dr. Nethravati G)
-                    <span class="right">Bangalore Institute of Technology, Karnataka</span>
-                </div>
-                <div style="font-size:0.95em; color:#666;">May 2025 – June 2025</div>
-                <ul>
-                    <li>Developed a responsive web application to automate invoice creation, payment tracking, and report generation for SMEs.</li>
-                    <li>Enabled efficient management of products, customers, and transactions.</li>
-                    <li>Tech Stack: HTML, CSS, JavaScript, PHP, MySQL, Bootstrap, AdminLTE, DataTables.</li>
-                </ul>
-                <div style="font-weight:bold; margin-top:1em;"><i class="fa fa-shield-alt"></i> Safe Support — Women-Only Emergency Platform
-                    <span class="right">Bangalore Institute of Technology, Karnataka</span>
-                </div>
-                <div style="font-size:0.95em; color:#666;">Nov 2025 – Present</div>
-                <ul>
-                    <li>Built a React Native app enabling verified female students to request/provide emergency support.</li>
-                    <li>Implemented college email & face verification, location-based matching, and real-time encrypted chat with auto-deletion.</li>
-                    <li>Included anonymous mode, blocking/reporting, and community moderation.</li>
-                    <li>Tech Stack: React Native, Expo, Firebase, React Navigation, React Native Paper.</li>
-                </ul>
-            </div>
-            <div class="divider"></div>
-            <div class="resume-section">
-                <span class="section-title">Achievements</span>
-                <ul class="achievements-list">
-                    <li><span style="color:#222; font-weight:bold;"><i class="fa fa-check-circle"></i> 2024</span> <span style="font-weight:bold;">Solved over 400 algorithmic problems</span>, Across multiple coding platforms (Codeforces, LeetCode, etc.)</li>
-                    <li><span style="color:#222; font-weight:bold;"><i class="fa fa-check-circle"></i> 2025</span> <span style="font-weight:bold;">Pupil on Codeforces</span>,</li>
-                    <li><span style="color:#222; font-weight:bold;"><i class="fa fa-check-circle"></i> 2025</span> <span style="font-weight:bold;">3-star coder on CodeChef</span>,</li>
-                    <li><span style="color:#222; font-weight:bold;"><i class="fa fa-check-circle"></i> 2025</span> <span style="font-weight:bold; color:#d32f2f;">Top 9.76% on LeetCode</span>,</li>
-                </ul>
-            </div>
-            <div class="divider"></div>
-            <div class="resume-section">
-                <span class="section-title">Relevant Courses</span>
-                <ul class="courses-list">
-                    <li>Probability and Statistics</li>
-                    <li>Data Structures</li>
-                    <li>Algorithms</li>
-                    <li>Operating Systems</li>
-                    <li>Discrete Mathematics</li>
-                    <li>Database management system</li>
-                    <li>Data visualisation using python</li>
-                    <li>Object-oriented programming using java</li>
-                </ul>
-            </div>
-            <div class="divider"></div>
-            <div class="resume-section" style="margin-top:1.5em;">
-                <h2>Download PDF</h2>
-                <a href="kapilresume.pdf" target="_blank" class="resume-download">Download Resume (PDF)</a>
-            </div>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="biodata.html">Bio-data</a></li>
+    </ul>
+</nav>
+
+<main>
+<div class="resume-container">
+
+    <!-- HEADER -->
+    <div class="resume-header">
+        <h1>Shivansh Bhageria</h1>
+        <div class="contact">
+            Bangalore, Karnataka, India<br>
+
+            <a href="tel:+919462000063" target="_blank">
+                <i class="fa fa-phone"></i> +91 9462000063
+            </a> |
+
+            <a href="mailto:bhageriashivansh.1205@gmail.com" target="_blank">
+                <i class="fa fa-envelope"></i> Email
+            </a> |
+
+            <a href="https://www.linkedin.com/in/shivansh-bhageria-713b42266/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a> |
+
+            <a href="https://github.com/Shivansh1205" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a> |
+
+            <a href="https://leetcode.com/u/kwmQddM1m2/" target="_blank">
+                <i class="fa-solid fa-code"></i> LeetCode
+            </a> |
+
+            <a href="https://www.codechef.com/users/Shivansh1205" target="_blank">
+                <i class="fa-solid fa-bowl-food"></i> CodeChef
+            </a>
         </div>
-        </main>
+    </div>
+    <div class="divider"></div>
+
+    <!-- EDUCATION -->
+    <div class="resume-section">
+        <span class="section-title">Education</span>
+        <span class="right">Bangalore, Karnataka</span>
+        <div style="font-weight:bold;"><i class="fa fa-university"></i> Bangalore Institute of Technology</div>
+        <div>B.E. in Computer Science and Engineering</div>
+        <div>CGPA : 8.1</div>
+        <div style="color:#666;">May 2027 (Expected)</div>
+    </div>
+    <div class="divider"></div>
+
+    <!-- WORK EXPERIENCE -->
+    <div class="resume-section">
+        <span class="section-title">Work Experience</span>
+        <div style="font-weight:bold;">OpenIntervue – Quality Analyst <span class="right">May 2025 – June 2025</span></div>
+        <ul>
+            <li>Conducted 50+ mock AI interview sessions to validate dialogue flow, logic & response accuracy</li>
+            <li>Reported errors, edge cases & breakdowns to the AI training team for improvements</li>
+            <li>Suggested prompt & fallback refinements to improve clarity & reduce confusion</li>
+            <li>Improved consistency across roles and test rounds during evaluation cycles</li>
+        </ul>
+    </div>
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <div class="resume-section">
+        <span class="section-title">Projects</span>
+
+        <div style="font-weight:bold;">Sleep-Apnea Indicator</div>
+        <ul>
+            <li>Built ML model using 500+ PSG & sonogram signals to detect sleep apnea</li>
+            <li>Processed EEG, ECG, airflow, SpO₂ with filtering & noise removal</li>
+            <li>Achieved 85% accuracy using feature engineering & class balancing</li>
+        </ul>
+
+        <div style="font-weight:bold; margin-top:10px;">Plant Disease Detection & Advisory System</div>
+        <ul>
+            <li>CNN-based detection system achieving 40%+ reduction in misdiagnosis</li>
+            <li>Deployed for 1,000+ farmers cutting crop loss by 15–25%</li>
+            <li>Boosted decision-making efficiency by 30% using external data</li>
+        </ul>
+
+        <div style="font-weight:bold; margin-top:10px;">Empathic Support Chatbot (RAG-Based)</div>
+        <ul>
+            <li>RAG chatbot that improved user comfort score by 30% in testing</li>
+            <li>45% increase in response relevance with retrieval pipelines</li>
+            <li>Reduced loneliness feelings by 25–35% during early studies</li>
+        </ul>
+    </div>
+    <div class="divider"></div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="resume-section">
+        <span class="section-title">Certifications</span>
+        <ul>
+            <li>Data Structures and Algorithms – Infosys SpringBoard</li>
+            <li>Supervised ML – Coursera</li>
+            <li>Advanced Learning Algorithms – DeepLearningAI</li>
+        </ul>
+    </div>
+    <div class="divider"></div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="resume-section">
+        <span class="section-title">Achievements</span>
+        <ul>
+            <li>Semi-finalist – Ambition National Hackathon (BIT) & ML Hacks (BMSCE)</li>
+            <li>ICPC Regionalist 2025</li>
+            <li>1728 rating on LeetCode</li>
+        </ul>
+    </div>
+    <div class="divider"></div>
+
+    <!-- SKILLS -->
+    <div class="resume-section">
+        <span class="section-title">Skills</span>
+        <ul>
+            <li><strong>Programming:</strong> Python, Java, C</li>
+            <li><strong>ML & Data:</strong> Scikit-learn, TensorFlow, pandas, numpy, matplotlib, XGBoost</li>
+            <li><strong>Tools & Systems:</strong> Git, GitHub, DBMS, OS, DSA, OOPS, Computer Networks</li>
+        </ul>
+    </div>
+
+</div>
+</main>
 </body>
 </html>
